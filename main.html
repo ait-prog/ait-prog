@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibek Aitbekov - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- The particles.js background is preserved -->   
+    <!-- later-->
+    <div id="particles-js"></div>   
+
+    <main class="card-container">
+        <div class="portfolio-card">
+            <!-- Non-scrolling header of the card -->
+            <div class="card-header">
+                <div class="header-info">
+                    <h1 class="card-title">Alibek Aitbekov</h1>
+                    <p class="card-subtitle">MLOps engineer</p>
+                    <div class="social-links">
+                        <a href="https://github.com/ait-prog" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.kaggle.com/aitbekovalibek" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                        <a href="https://www.linkedin.com/in/alibek-aitbekov-2b4319310/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <img src="assets/photo.jpg" alt="Alibek Aitbekov" class="profile-pic">
+            </div>
+
+            <!-- Scrollable body of the card -->
+            <div class="card-body">
+                <section id="education">
+                    <h2 class="section-title-card">Education</h2>
+                    <p class="degree">B.S. Statistics and Data Science</p>
+                    <p class="university">Suleyman Demirel University, 2023-Present</p>
+                </section>
+
+                <section id="experience">
+                    <h2 class="section-title-card">Work Experience</h2>
+                    <div class="experience-card">
+                        <h3>Back-end Developer (MLOps)</h3>
+                        <h4>Hero’s Journey, Almaty, Kazakhstan | 6/2025 – Present</h4>
+                        <ul>
+                            <li>Designed and implemented automated workflows (n8n) for model training and deployment.</li>
+                            <li>Contributed to database development and optimization, including performance tuning and visualization using DBeaver.</li>
+                            <li>Collaborated with team to integrate MLOps principles into product pipelines.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Back-end Intern</h3>
+                        <h4>MyCarDigital, Almaty, Kazakhstan | 6/2024 – 9/2024</h4>
+                        <ul>
+                            <li>Developed and Improved a predictive model for estimating prices based on specific criteria.</li>
+                            <li>Performed data analysis and feature engineering for new project.</li>
+                            <li>Migrated and integrated a database into a new mobile application.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h2 class="section-title-card">Projects</h2>
+                    <div class="project-card">
+                        <h3>MyBot</h3>
+                        <p>An advanced AI-powered Discord bot with natural language processing capabilities, economy system, private rooms, and role management. Developing an AI-driven chatbot integrated with Discord (integrated on 2 servers).</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>LiteR — Lightweight BERT/GPT-inspired Model</h3>
+                        <p>Built a GPT-style generative model (&lt;100 MB, ~20M parameters) with PyTorch, supporting pretraining, fine-tuning, and text generation. Roadmap includes MLOps practices: automated pipelines (Airflow/Prefect), CI/CD (GitHub Actions), deployment to Kubernetes, and monitoring with Prometheus/Grafana.</p>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <h2 class="section-title-card">Relevant Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">Python (TensorFlow, PyTorch, Keras, Scikit-Learn, Pandas)</div>
+                        <div class="skill-card">PostgreSQL</div>
+                        <div class="skill-card">MongoDB</div>
+                        <div class="skill-card">Git</div>
+                        <div class="skill-card">Docker</div>
+                        <div class="skill-card">Kubernetes</div>
+                        <div class="skill-card">REST API Design</div>
+                        <div class="skill-card">CI/CD Pipelines</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alibek Aitbekov. | <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
