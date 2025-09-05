@@ -1,98 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dim">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alibek Aitbekov - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alibek Aitbekov — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#00d4ff">
 </head>
 <body>
-    <!-- The particles.js background is preserved -->   
-    <!-- later-->
-    <div id="particles-js"></div>   
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-    <main class="card-container">
-        <div class="portfolio-card">
-            <!-- Non-scrolling header of the card -->
-            <div class="card-header">
-                <div class="header-info">
-                    <h1 class="card-title">Alibek Aitbekov</h1>
-                    <p class="card-subtitle">MLOps engineer</p>
-                    <div class="social-links">
-                        <a href="https://github.com/ait-prog" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.kaggle.com/aitbekovalibek" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
-                        <a href="https://www.linkedin.com/in/alibek-aitbekov-2b4319310/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <img src="assets/photo.jpg" alt="Alibek Aitbekov" class="profile-pic">
+  <div class="collision collision-left" aria-hidden="true">
+    <span class="beam layer1"></span>
+    <span class="beam layer2"></span>
+    <span class="beam layer3"></span>
+    <span class="glint"></span>
+    <span class="sparks"></span>
+  </div>
+  <div class="collision collision-right" aria-hidden="true">
+    <span class="beam layer1"></span>
+    <span class="beam layer2"></span>
+    <span class="beam layer3"></span>
+    <span class="glint"></span>
+    <span class="sparks"></span>
+  </div>
+
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="card-container">
+    <div class="portfolio-card" role="article" aria-label="Портфолио Алибека Айтбекова">
+      <div class="card-header">
+        <div class="header-info">
+          <h1 class="card-title">Alibek Aitbekov</h1>
+          <p class="card-subtitle">MLOps engineer</p>
+
+          <div class="actions" role="group" aria-label="Действия и соцсети">
+            <div class="social-links">
+              <a href="https://github.com/ait-prog" target="_blank" rel="noopener" aria-label="GitHub Алибека"><i class="fab fa-github"></i></a>
+              <a href="https://www.kaggle.com/aitbekovalibek" target="_blank" rel="noopener" aria-label="Kaggle Алибека"><i class="fab fa-kaggle"></i></a>
+              <a href="https://www.linkedin.com/in/alibek-aitbekov-2b4319310/" target="_blank" rel="noopener" aria-label="LinkedIn Алибека"><i class="fab fa-linkedin"></i></a>
             </div>
-
-            <!-- Scrollable body of the card -->
-            <div class="card-body">
-                <section id="education">
-                    <h2 class="section-title-card">Education</h2>
-                    <p class="degree">B.S. Statistics and Data Science</p>
-                    <p class="university">Suleyman Demirel University, 2023-Present</p>
-                </section>
-
-                <section id="experience">
-                    <h2 class="section-title-card">Work Experience</h2>
-                    <div class="experience-card">
-                        <h3>Back-end Developer (MLOps)</h3>
-                        <h4>Hero’s Journey, Almaty, Kazakhstan | 6/2025 – Present</h4>
-                        <ul>
-                            <li>Designed and implemented automated workflows (n8n) for model training and deployment.</li>
-                            <li>Contributed to database development and optimization, including performance tuning and visualization using DBeaver.</li>
-                            <li>Collaborated with team to integrate MLOps principles into product pipelines.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <h3>Back-end Intern</h3>
-                        <h4>MyCarDigital, Almaty, Kazakhstan | 6/2024 – 9/2024</h4>
-                        <ul>
-                            <li>Developed and Improved a predictive model for estimating prices based on specific criteria.</li>
-                            <li>Performed data analysis and feature engineering for new project.</li>
-                            <li>Migrated and integrated a database into a new mobile application.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section id="projects">
-                    <h2 class="section-title-card">Projects</h2>
-                    <div class="project-card">
-                        <h3>MyBot</h3>
-                        <p>An advanced AI-powered Discord bot with natural language processing capabilities, economy system, private rooms, and role management. Developing an AI-driven chatbot integrated with Discord (integrated on 2 servers).</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>LiteR — Lightweight BERT/GPT-inspired Model</h3>
-                        <p>Built a GPT-style generative model (&lt;100 MB, ~20M parameters) with PyTorch, supporting pretraining, fine-tuning, and text generation. Roadmap includes MLOps practices: automated pipelines (Airflow/Prefect), CI/CD (GitHub Actions), deployment to Kubernetes, and monitoring with Prometheus/Grafana.</p>
-                    </div>
-                </section>
-
-                <section id="skills">
-                    <h2 class="section-title-card">Relevant Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card">Python (TensorFlow, PyTorch, Keras, Scikit-Learn, Pandas)</div>
-                        <div class="skill-card">PostgreSQL</div>
-                        <div class="skill-card">MongoDB</div>
-                        <div class="skill-card">Git</div>
-                        <div class="skill-card">Docker</div>
-                        <div class="skill-card">Kubernetes</div>
-                        <div class="skill-card">REST API Design</div>
-                        <div class="skill-card">CI/CD Pipelines</div>
-                    </div>
-                </section>
-            </div>
+            <a class="btn" href="assets/Aitbekov-Alibek-cv.pdf" target="_blank" rel="noopener">Download my CV</a>
+          </div>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Alibek Aitbekov. | <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
-    </footer>
+        <div class="avatar-wrap">
+          <img src="assets/photo.jpg" alt="Портрет Алибека Айтбекова" class="profile-pic" />
+          <span class="scan-line"></span>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="particles-config.js"></script>
+      <div class="card-body" tabindex="0">
+        <section id="education">
+          <h2 class="section-title-card">Education</h2>
+          <p class="degree">B.S. Statistics and Data Science</p>
+          <p class="university">Suleyman Demirel University, 2023–Present</p>
+        </section>
+
+        <section id="experience">
+          <h2 class="section-title-card">Work Experience</h2>
+          <div class="experience-card">
+            <h3>Back-end Developer (MLOps)</h3>
+            <h4>Hero’s Journey, Almaty, Kazakhstan | 6/2025 – Present</h4>
+            <ul>
+              <li>Designed and implemented automated workflows (n8n) for model training and deployment.</li>
+              <li>Contributed to DB development and optimization (DBeaver).</li>
+              <li>Integrated MLOps principles into product pipelines.</li>
+            </ul>
+          </div>
+          <div class="experience-card">
+            <h3>Back-end Intern</h3>
+            <h4>MyCarDigital, Almaty, Kazakhstan | 6/2024 – 9/2024</h4>
+            <ul>
+              <li>Price estimation model + feature engineering.</li>
+              <li>EDA for new project.</li>
+              <li>DB migration & integration for a mobile app.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2 class="section-title-card">Projects</h2>
+          <div class="project-card">
+            <h3>MyBot</h3>
+            <p>AI-powered Discord bot with NLP, economy, private rooms, role management. Integrated on 2 servers.</p>
+            <div class="badges">
+              <span class="badge">Python</span><span class="badge">discord.py</span><span class="badge">Transformers</span><span class="badge">NLP</span><span class="badge">aiosqlite</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>LiteR — Lightweight BERT/GPT-inspired Model</h3>
+            <p>GPT-style model (&lt;100 MB, ~20M params) on PyTorch: pretraining, fine-tuning, generation. Roadmap: pipelines, CI/CD, K8s, monitoring.</p>
+            <div class="badges">
+              <span class="badge">PyTorch</span><span class="badge">Transformers</span><span class="badge">Kubernetes</span><span class="badge">CI/CD</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2 class="section-title-card">Relevant Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">Python (TF, PyTorch, Keras, Sklearn, Pandas)</div>
+            <div class="skill-card">PostgreSQL</div>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">Docker</div>
+            <div class="skill-card">Kubernetes</div>
+            <div class="skill-card">REST API</div>
+            <div class="skill-card">CI/CD</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alibek Aitbekov. | <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
